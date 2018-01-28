@@ -32,7 +32,15 @@ nav {
     margin-bottom: 50px;
 }
 
-.trigger {
+.wheel {
+    margin-top: 70px;
+    margin-bottom: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#trigger {
     background-color: rgba(254, 245, 231, 0.952);
     padding: 15px 32px; 
     font-family: 'Montserrat', sans-serif;
@@ -40,10 +48,18 @@ nav {
     font-weight: bold; 
 }
 
-.wheel {
-    margin-top: 70px;
-    margin-bottom: 120px;
+#restaurant {
+    visibility: hidden;
+    color: red;
+    font-size: 30px;
+}
+
+#reload {
+    visibility: hidden;
+    background-color: rgba(254, 245, 231, 0.952);
+    padding: 15px 32px; 
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bold; 
+    margin-top: 50px;
 }
