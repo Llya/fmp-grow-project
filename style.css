@@ -23,6 +23,11 @@ nav {
     padding: 10px;        
 }
 
+#active {
+    background-color: rgb(7, 7, 7);
+    padding: 15px;     
+}
+
 .hamster {
     overflow:hidden;
 }
