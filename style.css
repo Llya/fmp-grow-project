@@ -1,11 +1,46 @@
-nav {
-    font-family: 'Nova Mono';
-    font-size: 20px
-}
-
 body {
-    background-color:#FEF5E7;
-    font-family: 'Nova Mono';
+    background-color:rgba(254, 245, 231, 0.952);
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
+.page-top {
+    background-color: rgb(155, 125, 125);
+    padding: 20px; 
+}
+
+nav {
+    font-size: 20px;
+    background-color: rgb(155, 125, 125);
+    padding: 15px;
+    border: 1px solid #555;
+
+}
+
+.navigation {    
+    color: white;  
+    text-decoration: none; 
+    font-weight: bold;
+    padding: 10px;        
+}
+
+.hamster {
+    overflow:hidden;
+}
+
+.hamster .gif {
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+.button {
+    background-color: rgba(254, 245, 231, 0.952);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#wheel {
+    padding: 15px 32px; 
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
