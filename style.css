@@ -14,7 +14,6 @@ nav {
     background-color: rgb(155, 125, 125);
     padding: 15px;
     border: 1px solid #555;
-
 }
 
 .navigation {    
@@ -33,14 +32,18 @@ nav {
     margin-bottom: 50px;
 }
 
-.button {
+.trigger {
     background-color: rgba(254, 245, 231, 0.952);
+    padding: 15px 32px; 
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    font-weight: bold; 
 }
 
-#wheel {
-    padding: 15px 32px; 
+.wheel {
     margin-top: 70px;
     margin-bottom: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
