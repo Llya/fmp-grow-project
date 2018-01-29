@@ -1,4 +1,4 @@
-var restaurants = ["Franco's", "Homeslice","Nando's","McDonald's","Pret","Bottega","Flat Iron","Blue's Kitchen", "The Diner"]
+var restaurants = ["Franco's", "Homeslice","Nando's","McDonald's","Inito","Flat Iron","Blue's Kitchen", "The Diner", "Sainsbury's", "The Chicken Place"]
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
