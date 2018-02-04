@@ -18,16 +18,22 @@
         <a class="navigation active" href="wheel.html">Wheel</a>
         <a class="navigation" href="mailto:mladent@findmypast.com">Contact</a>
     </nav>
-    <div class="wheel">
-    <p>Today you should go to:</p>
-    <p class="restaurant" id="restaurant"></p>
-    <button type="button" class ="trigger" id ="trigger">Click Here To Reveal</button>
+    <div class="wheel" id="wheel">
+        <p>Today you should go to:</p>
+        <p class="restaurant" id="restaurant"></p>
+        <button type="button" class="trigger" id="trigger">Click Here To Reveal</button>
+        <p class="title">List of restaurants:</p>
+        <ol class="list" id="restaurantList"></ol>
+    </div>
+    <div class="title limit" id="limit">
+        <p>I'm sorry, you've hit your limit for today. Your choices were:</p>
+        <ol class="list" id="optionsList"></ol>
     </div>
     <footer>
         <p>Mirissa Ladent - 2018</p>
     </footer>
     <script type="text/javascript" src="script.js"></script>
+    <script>displayList(restaurants, "restaurantList")</script>
 </body>
+
 </html>
-
-

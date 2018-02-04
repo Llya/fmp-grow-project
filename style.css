@@ -51,6 +51,8 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: bold; 
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .restaurant {
@@ -58,4 +60,25 @@ nav {
     color: red;
     font-size: 30px;
     padding: 15px 32px;
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.list {
+    font-size: 15px;
+    font-style: italic;
+    list-style-position: outside;
+    text-align: left;
+    display:inline-block;
+}
+
+.limit {
+    display: none;
+}
+
+footer {
+    margin-top: 10%;
 }
