@@ -1,24 +1,27 @@
-var restaurants = ["Franco's", "Homeslice","Nando's","McDonald's","Inito","Flat Iron","Blue's Kitchen", "The Diner", "Sainsbury's", "The Chicken Place"]
+/*
+remove onclick and use event listener
+use display: none instead of visibility: hidden
+use 1 button instead of 2 (change the text instead of hiding it)
+don't return same restaurant twice 
+*/
+
+var restaurants = ["Franco's", "Homeslice", "Nando's", "McDonald's", "Pret", "Bottega", "Flat Iron", "Blue's Kitchen", "The Diner"]
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
-  }
-
-function triggerWheel() {
-    var trigger = document.getElementById ("trigger") ;
-    var restaurant = document.getElementById ("restaurant") ;
-    var result = getRandomInt(restaurants.length);
-    var reload = document.getElementById ("reload") ;
-    trigger.style.visibility = "hidden";
-    restaurant.innerHTML = restaurants[result];
-    restaurant.style.visibility = "visible";
-    reload.style.visibility = "visible"
-
 }
 
-function triggerReload() {
-    var restaurant = document.getElementById ("restaurant") ;
+var trigger = document.getElementById("trigger");
+
+trigger.addEventListener("click", function () {
+    //get a number at random
     var result = getRandomInt(restaurants.length);
-    var reload = document.getElementById ("reload") ;
-    restaurant.innerHTML = restaurants[result];
-}
+    //get answer text
+    var answer = document.getElementById("restaurant");
+    //update text and display
+    answer.innerHTML = restaurants[result];
+    answer.style.display = "block";
+    //change button text
+    trigger.innerHTML = "Not happy? Try again."
+    trigger.style.fontSize ="15px"
+})
