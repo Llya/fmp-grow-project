@@ -17,6 +17,19 @@ var options = [];
 trigger.addEventListener("click", function () {
 
     if (options.length < 3) {
+    //check requirements
+    if (document.getElementById("location-1").checked) {
+        for (var i = 0; i < restaurants.length; i++) {
+            if (restaurants[i].location !== 1) {
+                restaurants.splice(i,1)
+            }
+        }
+    } else if (document.getElementById("location-2").checked) {
+        console.log('location 2 is checked')
+    } else if (document.getElementById("location-both").checked) {
+        console.log('location 3 is checked')
+    }
+    
     //get a number at random
     var result = getRandomInt(restaurants.length);
     
