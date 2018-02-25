@@ -1,10 +1,8 @@
-var restaurants = ["Franco's", "Homeslice", "Nando's", "McDonald's", "Pret", "Bottega", "Flat Iron", "Blue's Kitchen", "The Diner"]
-
 function displayList(item, listId) {
     var list = document.getElementById(listId);
     var list_display="";
     for (var i = 0; i < item.length; i++) {
-        list_display += "<li>" + item[i] + "</li>";
+        list_display += "<li>" + item[i].name + "</li>";
     }
     list.innerHTML = list_display;
 }
@@ -24,7 +22,7 @@ trigger.addEventListener("click", function () {
     
     //update text and display
     var answer = document.getElementById("restaurant");
-    answer.innerHTML = restaurants[result];
+    answer.innerHTML = restaurants[result].name;
     answer.style.display = "block";
 
     //store result
