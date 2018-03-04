@@ -37,22 +37,9 @@ nav {
     margin-bottom: 50px;
 }
 
-.title {
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 18px;
-}
-
-.filters {
-    display: inline-block;
-    text-align: left;
-    padding: 5px 30px 35px;
-    background-color: rgba(155, 125, 125, 0.342);
-}
-
 .wheel {
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -75,12 +62,17 @@ nav {
     padding: 15px 32px;
 }
 
+.title {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
 .list {
     font-size: 15px;
     font-style: italic;
     list-style-position: outside;
     text-align: left;
-    display: inline-block;
+    display:inline-block;
 }
 
 .limit {
