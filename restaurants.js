@@ -2,50 +2,80 @@ var restaurants = [{
     name: "Franco's",
     weight: 5,
     location: 1,
-    price: 1
+    price: 1,
+    vegetarian: true,
+    halal: true,
+    healthy: false
 }, {
     name: "Homeslice",
     weight: 2,
     location: 1,
-    price: 1
+    price: 1,
+    vegetarian: true,
+    halal: false,
+    healthy: false
 }, {
     name: "Nando's",
     weight: 2,
     location: 2,
-    price: 2
+    price: 2,
+    vegetarian: true,
+    halal: true,
+    healthy: false
 }, {
     name: "McDonald's",
     weight: 1,
     location: 2,
-    price: 1
-}, {
-    name: "Pret",
-    weight: 1,
-    location: 1,
-    price: 1
+    price: 1,
+    vegetarian: false,
+    halal: false,
+    healthy: false
 }, {
     name: "Flat Iron",
     weight: 1,
     location: 1,
-    price: 3
+    price: 3,
+    vegetarian: false,
+    halal: false,
+    healthy: false
 }, {
     name: "Blue's Kitchen",
     weight: 1,
     location: 1,
-    price: 2
+    price: 2,
+    vegetarian: true,
+    halal: false,
+    healthy: false
 }, {
     name: "The Diner",
     weight: 2,
     location: 1,
-    price: 2
+    price: 2,
+    vegetarian: true,
+    halal: false,
+    healthy: false
 }, {
     name: "Pizza Union",
     weight: 1,
     location: 2,
-    price: 2
+    price: 2,
+    vegetarian: true,
+    halal: true,
+    healthy: false
 }, {
     name: "Inito",
     weight: 2,
     location: 1,
-    price: 1
+    price: 1,
+    vegetarian: true,
+    halal: true,
+    healthy: true
+}, {
+    name: "Dishoom",
+    weight: 1,
+    location: 2,
+    price: 3,
+    vegetarian: true,
+    halal: true,
+    healthy: true
 }]
