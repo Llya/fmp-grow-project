@@ -11,9 +11,11 @@ function displayList(item, listId) {
 //TAKING INTO ACCOUNT FILTERS SELECTED
 var location_filter = document.getElementById("location");
 
-location_filter.addEventListener("change", function () {
+//create an object to store filters selected & filter down list by values
+
+location_filter.addEventListener("change", function (e) {
     var filtered_list = [];
-    if (document.getElementById("location-1").checked) {
+    if (e.target.id == "location-1" && e.target.checked) {
         //CHECK EACH VALUE FOR MATCH
         for (var i = 0; i < restaurants.length; i++) {
             if (restaurants[i].location === 1) {
