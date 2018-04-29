@@ -47,7 +47,7 @@ nav {
     display: inline-block;
     text-align: left;
     padding: 5px 30px 35px;
-    background-color: rgba(155, 125, 125, 0.342);
+    /* background-color: rgba(155, 125, 125, 0.342); */
 }
 
 .wheel {

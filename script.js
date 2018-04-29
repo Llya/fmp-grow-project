@@ -8,51 +8,6 @@ function displayList(item, listId) {
     list.innerHTML = list_display;
 }
 
-//TAKING INTO ACCOUNT FILTERS SELECTED
-var location_filter = document.getElementById("location");
-
-//create an object to store filters selected & filter down list by values
-
-location_filter.addEventListener("change", function (e) {
-    var filtered_list = [];
-    if (e.target.id == "location-1" && e.target.checked) {
-        //CHECK EACH VALUE FOR MATCH
-        for (var i = 0; i < restaurants.length; i++) {
-            if (restaurants[i].location === 1) {
-                //CHECK VALUE ISN'T ALREADY IN LIST
-                var matches = 0;
-                for (var ii = 0; ii < filtered_list.length; ii++) {
-                    if (filtered_list[ii].name === restaurants[i].name) {
-                        matches = 1;
-                        break;
-                    }
-                }
-                if (matches !== 1) {
-                    filtered_list.push(restaurants[i])
-                }
-            }
-        }
-    } else if (document.getElementById("location-2").checked) {
-        for (var i = 0; i < restaurants.length; i++) {
-            if (restaurants[i].location <= 2) {
-                //CHECK VALUE ISN'T ALREADY IN LIST
-                var matches = 0;
-                for (var ii = 0; ii < filtered_list.length; ii++) {
-                    if (filtered_list[ii].name === restaurants[i].name) {
-                        matches = 1;
-                        break;
-                    }
-                }
-                if (matches !== 1) {
-                    filtered_list.push(restaurants[i])
-                }
-            }
-        }
-    }
-    displayList(filtered_list, "restaurantList")
-})
-
-
 //GENERATING RESTAURANT OPTIONS
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -85,9 +40,45 @@ trigger.addEventListener("click", function () {
 
     } else {
         var wheel = document.getElementById("wheel");
+        var filters = document.getElementById("filters");
         var limit = document.getElementById("limit");
         wheel.style.display = "none";
+        filters.style.display = "none";
         limit.style.display = "block";
         displayList(options, "optionsList");
     }
 })
+
+ //listen for and store filter selection
+var active_filters = {};
+active_filters.location = [];
+active_filters.price = [];
+active_filters.diet = [];
+
+var location_filter = document.getElementById("location");
+//TO FIX: gets triggered when clicking outside the radio buttons and stores 'n'
+location_filter.addEventListener("click", function (e) {
+    //TO FIX: this will only work as long as there are less than 10 options - what's a more resilient option?
+    active_filters.location = [e.target.id.slice(-1)];
+    console.log(active_filters);
+}); 
+
+var price_filter = document.getElementById("price");
+price_filter.addEventListener("click", function (e) {
+    if(e.target.checked === true) {
+        active_filters.price.push(e.target.id.slice(-1));
+    } else if (e.target.checked === false) {
+        active_filters.price.splice(active_filters.price.indexOf(e.target.id.slice(-1)),1);
+    }
+    console.log(active_filters);
+}); 
+
+var diet_filter = document.getElementById("diet");
+diet_filter.addEventListener("click", function (e) {
+    if(e.target.checked === true) {
+        active_filters.diet.push(e.target.id);
+    } else if (e.target.checked === false) {
+        active_filters.diet.splice(active_filters.diet.indexOf(e.target.id),1);
+    }
+    console.log(active_filters);
+}); 

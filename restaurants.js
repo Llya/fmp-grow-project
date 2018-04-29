@@ -4,7 +4,6 @@ var restaurants = [{
     location: 1,
     price: 1,
     vegetarian: true,
-    halal: true,
     healthy: false
 }, {
     name: "Homeslice",
@@ -12,7 +11,6 @@ var restaurants = [{
     location: 1,
     price: 1,
     vegetarian: true,
-    halal: false,
     healthy: false
 }, {
     name: "Nando's",
@@ -20,7 +18,6 @@ var restaurants = [{
     location: 2,
     price: 2,
     vegetarian: true,
-    halal: true,
     healthy: false
 }, {
     name: "McDonald's",
@@ -28,7 +25,6 @@ var restaurants = [{
     location: 2,
     price: 1,
     vegetarian: false,
-    halal: false,
     healthy: false
 }, {
     name: "Flat Iron",
@@ -36,7 +32,6 @@ var restaurants = [{
     location: 1,
     price: 3,
     vegetarian: false,
-    halal: false,
     healthy: false
 }, {
     name: "Blue's Kitchen",
@@ -44,7 +39,6 @@ var restaurants = [{
     location: 1,
     price: 2,
     vegetarian: true,
-    halal: false,
     healthy: false
 }, {
     name: "The Diner",
@@ -52,7 +46,6 @@ var restaurants = [{
     location: 1,
     price: 2,
     vegetarian: true,
-    halal: false,
     healthy: false
 }, {
     name: "Pizza Union",
@@ -60,7 +53,6 @@ var restaurants = [{
     location: 2,
     price: 2,
     vegetarian: true,
-    halal: true,
     healthy: false
 }, {
     name: "Inito",
@@ -68,7 +60,6 @@ var restaurants = [{
     location: 1,
     price: 1,
     vegetarian: true,
-    halal: true,
     healthy: true
 }, {
     name: "Dishoom",
@@ -76,6 +67,5 @@ var restaurants = [{
     location: 2,
     price: 3,
     vegetarian: true,
-    halal: true,
     healthy: true
 }]
