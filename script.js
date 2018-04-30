@@ -66,7 +66,7 @@ location_filter.addEventListener("click", function (e) {
 var price_filter = document.getElementById("price");
 price_filter.addEventListener("click", function (e) {
     if(e.target.checked === true) {
-        active_filters.price.push(e.target.id.slice(-1));
+        active_filters.price.push(e.target.value);
     } else if (e.target.checked === false) {
         active_filters.price.splice(active_filters.price.indexOf(e.target.id.slice(-1)),1);
     }
@@ -82,3 +82,14 @@ diet_filter.addEventListener("click", function (e) {
     }
     console.log(active_filters);
 }); 
+
+/*NEXT STEPS
+
+- put listener on filters div
+- do check on name value (location/price/diet)
+- return value field 
+- try to avoid repetition within if statement
+
+- look into ways of filtering list
+- is object of arrays the best format?
+*/
